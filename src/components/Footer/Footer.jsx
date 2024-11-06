@@ -15,10 +15,10 @@ import Cart2 from '../../assets/cart2.png'
 const Footer = () => {
   return (
     <>
-      <footer className="py-[150px] bg-[#1F1F1F]">
+      <footer className="md:py-[150px] py-[60px] px-5 md:px-0 bg-[#1F1F1F]">
         <div className="container max-w-[1140px]">
-          <div className="flex">
-            <div className="w-[40%]">
+          <div className="flex flex-wrap">
+            <div className="md:w-[40%]">
               <div className="mb-8">
                 <img src={Footerlogo} alt="" />
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[20%] mt-9 text-white">
+            <div className="md:w-[20%] mt-9 text-white me-[80px] md:me-0">
               <ul>
                 <li className="mb-5">
                   <a href="#" className="font-bold cursor-default">
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[20%] mt-9 text-white">
+            <div className="md:w-[20%] mt-9 text-white">
               <ul>
                 <li className="mb-5">
                   <a href="#" className="font-bold cursor-default">
@@ -95,7 +95,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[20%] mt-9 text-white">
+            <div className="md:w-[20%] mt-9 text-white">
               <h5 className='text-base font-bold mb-5'>Certificate</h5>
               <div className='flex gap-2'>
                 <img src={Cart1} alt="" />                

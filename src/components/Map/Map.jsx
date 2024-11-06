@@ -5,9 +5,8 @@ const Map = () => {
     <>
       <section>
         <div>
-          <iframe
+          <iframe className='md:h-[450px] h-[350px]'
             width="100%"
-            
             height="450"
             frameborder="0"
             scrolling="no"

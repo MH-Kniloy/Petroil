@@ -11,7 +11,7 @@ import {
 const Header = () => {
   return (
     <>
-      <div className="bg-black border-b-[2px] border-b-[#FFB800]">
+      <div className="bg-black border-b-[2px] border-b-[#FFB800]"> 
         <div className="container max-w-[1140px]">
           <div className="md:flex ms-8 py-5 md:py-0">
             <div className="md:flex gap-[50px] md:w-1/2">
