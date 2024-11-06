@@ -25,19 +25,24 @@ const Blog = () => {
     ];
   return (
     <>
-      <section className="bg-[#F0F0F0] py-32 ">
+      <section className="bg-[#F0F0F0] md:py-32 py-[40px] ">
         <div className="container max-w-[1140px]">
-          <div className="flex justify-between gap-16">
-            {details.map((item) => (
-              <Blogpost details={item.details} bgimageurl={item.imageUrl}/>
-            ))}
+          <div>
+            <div className="md:flex justify-between gap-16">
+              {details.map((item) => (
+                <div className='mb-[30px] md:mb-0 last:mb-0'>
+                  <Blogpost details={item.details} bgimageurl={item.imageUrl} />
+
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="w-full flex justify-end pe-3 mt-8 ">
-            <h6 className="text-base font-bold flex self-center">
+          <div className="w-full flex justify-center md:justify-end pe-3 mt-8 ">
+            <h6 className="md:text-base text-[14px] md:font-bold font-medium flex self-center">
               MORE FROM THE BLOG
             </h6>
-            <FaChevronRight className="ps-2 text-[18px] self-center" />
+            <FaChevronRight className="ps-2 md:text-[18px] text-base self-center" />
           </div>
         </div>
       </section>

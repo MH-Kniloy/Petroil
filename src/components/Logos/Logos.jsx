@@ -9,7 +9,7 @@ const Logos = () => {
   return (
     <>
     
-    <section className='py-[140px]'>
+    <section className='md:py-[140px]'>
         <div className="container max-w-[1140px]">
             <Reactslick slider1= {Logo1} slider2= {Logo2} slider3= {Logo3} slider4= {Logo4} />
         </div>

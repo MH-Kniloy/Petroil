@@ -13,6 +13,17 @@ const Reactslick = ({slider1, slider2, slider3, slider4}) => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+    ]
   };
   return (
     <>
