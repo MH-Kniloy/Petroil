@@ -6,9 +6,13 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState(false)
   return (
     <>
-      <nav className="bg-primary py-[20px] px-5 md:px-0">
+      <nav
+        className={`${
+          dropdown ? "max-h-[1000px] " : "max-h-[75px]"
+        } bg-primary py-[20px] px-5 md:px-0 md:max-h-full transition-all duration-700 ease-in-out`}
+      >
         <div className="container max-w-[1140px]">
-          <div className="md:flex items-center justify-between">
+          <div className="md:flex items-center justify-between ">
             <div className="md:w-[35%] cursor-pointer flex md:block justify-between items-center mb-5 md:mb-0">
               <img className="md:w-[60%] w-[40%]" src={Logo} alt="logo" />
               <CgMenuRight
@@ -18,8 +22,8 @@ const Navbar = () => {
             </div>
             <div
               className={`${
-                dropdown ? "block" : "hidden"
-              } md:block transition duration-700 ease-in-out`}
+                dropdown ? "left-0 opacity-100" : "left-[-100%] opacity-0"
+              } md:opacity-100 md:static md:block transition-all duration-700 ease-in-out relative absolute top-0 md:bg-inherit`}
             >
               <ul className="md:flex text-white text-base font-semibold gap-[50px] mb-5 md:mb-0">
                 <li className="hover:text-black pb-3 md:pb-0">

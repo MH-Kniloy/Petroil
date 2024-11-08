@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <div className="bg-black border-b-[2px] border-b-[#FFB800]"> 
         <div className="container max-w-[1140px]">
-          <div className="md:flex ms-8 py-5 md:py-0">
+          <div className="md:flex ms-4 md:ms-0 py-5 md:py-0">
             <div className="md:flex gap-[50px] md:w-1/2">
               <div className="md:py-4 text-white flex items-center relative after:absolute after:content-[''] after:w-[1px] after:h-[20px] after:bg-white after:top-[18px] after:right-[-24px]">
                 <MdOutlineMarkEmailUnread className="text-xl me-1" />
